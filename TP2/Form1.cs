@@ -16,7 +16,7 @@ namespace TP2
 
         private void initialisation()
         {
-            tabMots = new string[] { "ELEPHANT", "ALPHABET", "TORTUE", "VOITURE", "SOLEIL" };
+            tabMots = new string[] { "ELEPHANT", "ALPHABET", "TORTUE", "VOITURE", "SOLEIL", "CITROUILLE" };
             txtbxPropo.CharacterCasing = CharacterCasing.Upper;
             nbParties = 0;
 
