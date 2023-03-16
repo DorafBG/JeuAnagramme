@@ -28,194 +28,202 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDeviner = new System.Windows.Forms.Label();
-            this.lblMOT = new System.Windows.Forms.Label();
-            this.gbxProposition = new System.Windows.Forms.GroupBox();
-            this.txtbxPropo = new System.Windows.Forms.TextBox();
-            this.btnTester = new System.Windows.Forms.Button();
-            this.gbxEssais = new System.Windows.Forms.GroupBox();
-            this.lblEssaisPrecedents = new System.Windows.Forms.Label();
-            this.lblEssaisRestants = new System.Windows.Forms.Label();
-            this.lbxEssais = new System.Windows.Forms.ListBox();
-            this.lblEssais = new System.Windows.Forms.Label();
-            this.lblNbRestants = new System.Windows.Forms.Label();
-            this.gbxHistorique = new System.Windows.Forms.GroupBox();
-            this.lbxHistorique = new System.Windows.Forms.ListBox();
-            this.btnRejouer = new System.Windows.Forms.Button();
-            this.btnQuitter = new System.Windows.Forms.Button();
-            this.gbxProposition.SuspendLayout();
-            this.gbxEssais.SuspendLayout();
-            this.gbxHistorique.SuspendLayout();
-            this.SuspendLayout();
+            lblDeviner = new Label();
+            lblMOT = new Label();
+            gbxProposition = new GroupBox();
+            txtbxPropo = new TextBox();
+            btnTester = new Button();
+            gbxEssais = new GroupBox();
+            lblEssaisPrecedents = new Label();
+            lblEssaisRestants = new Label();
+            lbxEssais = new ListBox();
+            lblEssais = new Label();
+            lblNbRestants = new Label();
+            gbxHistorique = new GroupBox();
+            lbxHistorique = new ListBox();
+            btnRejouer = new Button();
+            btnQuitter = new Button();
+            vScrollBar1 = new VScrollBar();
+            gbxProposition.SuspendLayout();
+            gbxEssais.SuspendLayout();
+            gbxHistorique.SuspendLayout();
+            SuspendLayout();
             // 
             // lblDeviner
             // 
-            this.lblDeviner.AutoSize = true;
-            this.lblDeviner.Location = new System.Drawing.Point(12, 9);
-            this.lblDeviner.Name = "lblDeviner";
-            this.lblDeviner.Size = new System.Drawing.Size(86, 15);
-            this.lblDeviner.TabIndex = 0;
-            this.lblDeviner.Text = "Mot à deviner :";
+            lblDeviner.AutoSize = true;
+            lblDeviner.Location = new Point(12, 9);
+            lblDeviner.Name = "lblDeviner";
+            lblDeviner.Size = new Size(86, 15);
+            lblDeviner.TabIndex = 0;
+            lblDeviner.Text = "Mot à deviner :";
             // 
             // lblMOT
             // 
-            this.lblMOT.AutoSize = true;
-            this.lblMOT.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMOT.Location = new System.Drawing.Point(12, 24);
-            this.lblMOT.Name = "lblMOT";
-            this.lblMOT.Size = new System.Drawing.Size(78, 37);
-            this.lblMOT.TabIndex = 1;
-            this.lblMOT.Text = "MOT";
+            lblMOT.AutoSize = true;
+            lblMOT.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMOT.Location = new Point(12, 24);
+            lblMOT.Name = "lblMOT";
+            lblMOT.Size = new Size(78, 37);
+            lblMOT.TabIndex = 1;
+            lblMOT.Text = "MOT";
             // 
             // gbxProposition
             // 
-            this.gbxProposition.Controls.Add(this.txtbxPropo);
-            this.gbxProposition.Controls.Add(this.btnTester);
-            this.gbxProposition.Location = new System.Drawing.Point(12, 72);
-            this.gbxProposition.Name = "gbxProposition";
-            this.gbxProposition.Size = new System.Drawing.Size(393, 84);
-            this.gbxProposition.TabIndex = 2;
-            this.gbxProposition.TabStop = false;
-            this.gbxProposition.Text = "Proposition";
+            gbxProposition.Controls.Add(txtbxPropo);
+            gbxProposition.Controls.Add(btnTester);
+            gbxProposition.Location = new Point(12, 72);
+            gbxProposition.Name = "gbxProposition";
+            gbxProposition.Size = new Size(393, 84);
+            gbxProposition.TabIndex = 2;
+            gbxProposition.TabStop = false;
+            gbxProposition.Text = "Proposition";
             // 
             // txtbxPropo
             // 
-            this.txtbxPropo.Location = new System.Drawing.Point(17, 34);
-            this.txtbxPropo.Name = "txtbxPropo";
-            this.txtbxPropo.Size = new System.Drawing.Size(244, 23);
-            this.txtbxPropo.TabIndex = 1;
+            txtbxPropo.Location = new Point(17, 34);
+            txtbxPropo.Name = "txtbxPropo";
+            txtbxPropo.Size = new Size(244, 23);
+            txtbxPropo.TabIndex = 1;
             // 
             // btnTester
             // 
-            this.btnTester.Location = new System.Drawing.Point(278, 22);
-            this.btnTester.Name = "btnTester";
-            this.btnTester.Size = new System.Drawing.Size(95, 48);
-            this.btnTester.TabIndex = 0;
-            this.btnTester.Text = "Tester";
-            this.btnTester.UseVisualStyleBackColor = true;
-            this.btnTester.Click += new System.EventHandler(this.btnTester_Click);
+            btnTester.Location = new Point(278, 22);
+            btnTester.Name = "btnTester";
+            btnTester.Size = new Size(95, 48);
+            btnTester.TabIndex = 0;
+            btnTester.Text = "Tester";
+            btnTester.UseVisualStyleBackColor = true;
+            btnTester.Click += btnTester_Click;
             // 
             // gbxEssais
             // 
-            this.gbxEssais.Controls.Add(this.lblEssaisPrecedents);
-            this.gbxEssais.Controls.Add(this.lblEssaisRestants);
-            this.gbxEssais.Controls.Add(this.lbxEssais);
-            this.gbxEssais.Controls.Add(this.lblEssais);
-            this.gbxEssais.Controls.Add(this.lblNbRestants);
-            this.gbxEssais.Location = new System.Drawing.Point(12, 175);
-            this.gbxEssais.Name = "gbxEssais";
-            this.gbxEssais.Size = new System.Drawing.Size(393, 222);
-            this.gbxEssais.TabIndex = 3;
-            this.gbxEssais.TabStop = false;
-            this.gbxEssais.Text = "Essais";
+            gbxEssais.Controls.Add(lblEssaisPrecedents);
+            gbxEssais.Controls.Add(lblEssaisRestants);
+            gbxEssais.Controls.Add(lbxEssais);
+            gbxEssais.Controls.Add(lblEssais);
+            gbxEssais.Controls.Add(lblNbRestants);
+            gbxEssais.Location = new Point(12, 175);
+            gbxEssais.Name = "gbxEssais";
+            gbxEssais.Size = new Size(393, 222);
+            gbxEssais.TabIndex = 3;
+            gbxEssais.TabStop = false;
+            gbxEssais.Text = "Essais";
             // 
             // lblEssaisPrecedents
             // 
-            this.lblEssaisPrecedents.AutoSize = true;
-            this.lblEssaisPrecedents.Location = new System.Drawing.Point(119, 65);
-            this.lblEssaisPrecedents.Name = "lblEssaisPrecedents";
-            this.lblEssaisPrecedents.Size = new System.Drawing.Size(13, 15);
-            this.lblEssaisPrecedents.TabIndex = 4;
-            this.lblEssaisPrecedents.Text = "0";
+            lblEssaisPrecedents.AutoSize = true;
+            lblEssaisPrecedents.Location = new Point(119, 65);
+            lblEssaisPrecedents.Name = "lblEssaisPrecedents";
+            lblEssaisPrecedents.Size = new Size(13, 15);
+            lblEssaisPrecedents.TabIndex = 4;
+            lblEssaisPrecedents.Text = "0";
             // 
             // lblEssaisRestants
             // 
-            this.lblEssaisRestants.AutoSize = true;
-            this.lblEssaisRestants.Location = new System.Drawing.Point(158, 35);
-            this.lblEssaisRestants.Name = "lblEssaisRestants";
-            this.lblEssaisRestants.Size = new System.Drawing.Size(13, 15);
-            this.lblEssaisRestants.TabIndex = 3;
-            this.lblEssaisRestants.Text = "0";
+            lblEssaisRestants.AutoSize = true;
+            lblEssaisRestants.Location = new Point(158, 35);
+            lblEssaisRestants.Name = "lblEssaisRestants";
+            lblEssaisRestants.Size = new Size(13, 15);
+            lblEssaisRestants.TabIndex = 3;
+            lblEssaisRestants.Text = "0";
             // 
             // lbxEssais
             // 
-            this.lbxEssais.FormattingEnabled = true;
-            this.lbxEssais.ItemHeight = 15;
-            this.lbxEssais.Location = new System.Drawing.Point(17, 93);
-            this.lbxEssais.Name = "lbxEssais";
-            this.lbxEssais.Size = new System.Drawing.Size(356, 109);
-            this.lbxEssais.TabIndex = 2;
+            lbxEssais.FormattingEnabled = true;
+            lbxEssais.ItemHeight = 15;
+            lbxEssais.Location = new Point(17, 93);
+            lbxEssais.Name = "lbxEssais";
+            lbxEssais.Size = new Size(356, 109);
+            lbxEssais.TabIndex = 2;
             // 
             // lblEssais
             // 
-            this.lblEssais.AutoSize = true;
-            this.lblEssais.Location = new System.Drawing.Point(14, 64);
-            this.lblEssais.Name = "lblEssais";
-            this.lblEssais.Size = new System.Drawing.Size(104, 15);
-            this.lblEssais.TabIndex = 1;
-            this.lblEssais.Text = "Essais précédents :";
+            lblEssais.AutoSize = true;
+            lblEssais.Location = new Point(14, 64);
+            lblEssais.Name = "lblEssais";
+            lblEssais.Size = new Size(104, 15);
+            lblEssais.TabIndex = 1;
+            lblEssais.Text = "Essais précédents :";
             // 
             // lblNbRestants
             // 
-            this.lblNbRestants.AutoSize = true;
-            this.lblNbRestants.Location = new System.Drawing.Point(14, 34);
-            this.lblNbRestants.Name = "lblNbRestants";
-            this.lblNbRestants.Size = new System.Drawing.Size(147, 15);
-            this.lblNbRestants.TabIndex = 0;
-            this.lblNbRestants.Text = "Nombre d\'essais restants : ";
+            lblNbRestants.AutoSize = true;
+            lblNbRestants.Location = new Point(14, 34);
+            lblNbRestants.Name = "lblNbRestants";
+            lblNbRestants.Size = new Size(147, 15);
+            lblNbRestants.TabIndex = 0;
+            lblNbRestants.Text = "Nombre d'essais restants : ";
             // 
             // gbxHistorique
             // 
-            this.gbxHistorique.Controls.Add(this.lbxHistorique);
-            this.gbxHistorique.Location = new System.Drawing.Point(433, 72);
-            this.gbxHistorique.Name = "gbxHistorique";
-            this.gbxHistorique.Size = new System.Drawing.Size(339, 164);
-            this.gbxHistorique.TabIndex = 4;
-            this.gbxHistorique.TabStop = false;
-            this.gbxHistorique.Text = "Historique";
+            gbxHistorique.Controls.Add(lbxHistorique);
+            gbxHistorique.Location = new Point(433, 72);
+            gbxHistorique.Name = "gbxHistorique";
+            gbxHistorique.Size = new Size(339, 164);
+            gbxHistorique.TabIndex = 4;
+            gbxHistorique.TabStop = false;
+            gbxHistorique.Text = "Historique";
             // 
             // lbxHistorique
             // 
-            this.lbxHistorique.FormattingEnabled = true;
-            this.lbxHistorique.ItemHeight = 15;
-            this.lbxHistorique.Location = new System.Drawing.Point(15, 22);
-            this.lbxHistorique.Name = "lbxHistorique";
-            this.lbxHistorique.Size = new System.Drawing.Size(308, 124);
-            this.lbxHistorique.TabIndex = 0;
+            lbxHistorique.FormattingEnabled = true;
+            lbxHistorique.ItemHeight = 15;
+            lbxHistorique.Location = new Point(15, 22);
+            lbxHistorique.Name = "lbxHistorique";
+            lbxHistorique.Size = new Size(308, 124);
+            lbxHistorique.TabIndex = 0;
             // 
             // btnRejouer
             // 
-            this.btnRejouer.Location = new System.Drawing.Point(464, 315);
-            this.btnRejouer.Name = "btnRejouer";
-            this.btnRejouer.Size = new System.Drawing.Size(105, 48);
-            this.btnRejouer.TabIndex = 5;
-            this.btnRejouer.Text = "Rejouer";
-            this.btnRejouer.UseVisualStyleBackColor = true;
-            this.btnRejouer.Click += new System.EventHandler(this.btnRejouer_Click);
+            btnRejouer.Location = new Point(464, 315);
+            btnRejouer.Name = "btnRejouer";
+            btnRejouer.Size = new Size(105, 48);
+            btnRejouer.TabIndex = 5;
+            btnRejouer.Text = "Rejouer";
+            btnRejouer.UseVisualStyleBackColor = true;
+            btnRejouer.Click += btnRejouer_Click;
             // 
             // btnQuitter
             // 
-            this.btnQuitter.Location = new System.Drawing.Point(620, 315);
-            this.btnQuitter.Name = "btnQuitter";
-            this.btnQuitter.Size = new System.Drawing.Size(105, 48);
-            this.btnQuitter.TabIndex = 6;
-            this.btnQuitter.Text = "Quitter";
-            this.btnQuitter.UseVisualStyleBackColor = true;
-            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            btnQuitter.Location = new Point(620, 315);
+            btnQuitter.Name = "btnQuitter";
+            btnQuitter.Size = new Size(105, 48);
+            btnQuitter.TabIndex = 6;
+            btnQuitter.Text = "Quitter";
+            btnQuitter.UseVisualStyleBackColor = true;
+            btnQuitter.Click += btnQuitter_Click;
+            // 
+            // vScrollBar1
+            // 
+            vScrollBar1.Location = new Point(775, 9);
+            vScrollBar1.Name = "vScrollBar1";
+            vScrollBar1.Size = new Size(17, 432);
+            vScrollBar1.TabIndex = 7;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnQuitter);
-            this.Controls.Add(this.btnRejouer);
-            this.Controls.Add(this.gbxHistorique);
-            this.Controls.Add(this.gbxEssais);
-            this.Controls.Add(this.gbxProposition);
-            this.Controls.Add(this.lblMOT);
-            this.Controls.Add(this.lblDeviner);
-            this.Name = "Form1";
-            this.Text = "Anagramme";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.gbxProposition.ResumeLayout(false);
-            this.gbxProposition.PerformLayout();
-            this.gbxEssais.ResumeLayout(false);
-            this.gbxEssais.PerformLayout();
-            this.gbxHistorique.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(vScrollBar1);
+            Controls.Add(btnQuitter);
+            Controls.Add(btnRejouer);
+            Controls.Add(gbxHistorique);
+            Controls.Add(gbxEssais);
+            Controls.Add(gbxProposition);
+            Controls.Add(lblMOT);
+            Controls.Add(lblDeviner);
+            Name = "Form1";
+            Text = "Anagramme";
+            Load += Form1_Load;
+            gbxProposition.ResumeLayout(false);
+            gbxProposition.PerformLayout();
+            gbxEssais.ResumeLayout(false);
+            gbxEssais.PerformLayout();
+            gbxHistorique.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -235,5 +243,6 @@
         private Button btnQuitter;
         private Label lblEssaisPrecedents;
         private Label lblEssaisRestants;
+        private VScrollBar vScrollBar1;
     }
 }

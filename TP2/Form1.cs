@@ -62,7 +62,7 @@ namespace TP2
             motATrouver = motAlea;//Le mot à trouver est stocké
             String motATrouverMELANGE = melanger(motAlea); //Le mot aléatoire est mélangé et montré à l'utilisateur
             lblMOT.Text = motATrouverMELANGE;
-     
+
         }
 
         private void motCorrect()
@@ -75,7 +75,7 @@ namespace TP2
                                          MessageBoxButtons.YesNo,
                                          MessageBoxIcon.Question);
 
-            if(result == DialogResult.Yes)
+            if (result == DialogResult.Yes)
             {
                 nbParties++;
                 nbEssaisPrecedents++;
@@ -85,7 +85,8 @@ namespace TP2
 
                 nouvellePartie();
 
-            } else if(result == DialogResult.No)
+            }
+            else if (result == DialogResult.No)
             {
                 this.Dispose();
             }
@@ -126,7 +127,8 @@ namespace TP2
                     lbxHistorique.EndUpdate();
 
                     nouvellePartie();
-                } else if(result == DialogResult.No)
+                }
+                else if (result == DialogResult.No)
                 {
                     this.Dispose();
                 }
@@ -147,10 +149,12 @@ namespace TP2
         {
             String motPropose = txtbxPropo.Text;
 
-            if(motPropose == "")
+            if (motPropose == "")
             {
                 MessageBox.Show("Veuillez saisir un mot !", "ERREUR !");
-            } else {
+            }
+            else
+            {
                 if (motPropose == motATrouver) //Si le mot est le bon, l'afficher, sinon afficher le mot qui était à trouver et demande de rejouer
                 {
                     motCorrect();
@@ -179,5 +183,6 @@ namespace TP2
                 this.Dispose();
             }
         }
+
     }
 }
